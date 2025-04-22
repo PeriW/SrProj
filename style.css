@@ -1,0 +1,274 @@
+@import url('fonts.css');
+
+.navBar {
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fdfcfa;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 3;
+    
+}
+
+.navBar ul {
+    list-style-type: none;
+    padding-left: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    /*background-color: red;*/
+    display: flex;
+    align-items: right;
+    margin: 20px;
+}
+
+.navBar ul li {
+    margin:20px;
+    align-items: center;
+    /*background-color: cadetblue;*/
+}
+
+.navBar ul li a image {
+    height: 60%;
+    transform: translateY(-10px);
+}
+
+nav .antic-regular {
+    flex-wrap: wrap;
+}
+
+/*---  Changes the link style within the navigation bar  ---*/
+nav li a:link {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+nav li a:visited {
+    text-decoration: none;
+    color: #539bc9;
+}
+
+nav li a:hover {
+    text-decoration: none;
+    color: #539bc9;
+}
+
+nav li a:active {
+    text-decoration: none;
+}
+
+/*---  Which ever current page the user is on, the text is a different color  ---*/
+.highlight-link a:link {
+    color:#539bc9;
+    font-weight: bold;
+}
+
+.quote-btn {
+    background-color: #539bc9;
+    color:#fdfcfa;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    border: none;
+    border-radius: 25px;
+    transform: translateY(-20px);
+}
+
+html {
+    /*background-color: red;
+    background-image: url("images/Stripe\ Pattern.png");*/
+}
+
+body {
+    padding-top: 140px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 140px;
+    align-items: center;
+    z-index: 1;
+}
+
+.socials-container {
+    font-family: 'Antic';
+    font-weight: bolder;
+    display: inline-block;
+    align-items: center;
+}
+
+.socials-item {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+
+.card-images {
+    display: inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    object-fit: contain;
+    height: 350px;
+    width: 20%;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+}
+
+.fraunces-regular {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+}
+
+.antic-regular {
+    font-family: "Antic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a.antic-regular {
+    text-decoration: none;
+}
+
+.gradient-bg {
+    background-image: linear-gradient(#539bc9, #fdfcfa);
+}
+
+.white-bg {
+    background-color: #fdfcfa;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 50px;
+}
+
+.white-bg h1 {
+    align-items: center;
+}
+
+.testing-images{
+    top:0px;
+    
+}
+
+#middle-img { 
+    position: static;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    height: 100%;
+    width:100%;
+    top: 20%;  
+    left: 0;  
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*#bottom-img{
+    position: static;
+    max-width: 100%;
+    height: auto;
+    height: 100%;
+    width: 100%;
+    left: 0;
+}*/
+
+.review-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.review-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.review-box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.username strong {
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.username span {
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.reviews {
+    color: #f9d71c;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comment p {
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+#quoteButton {
+    background-color: #539bc9;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+#quoteButton:hover {
+    background-color: aliceblue;
+}
+
+.logo-lines {
+    display: flex;
+    align-items: right;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 50%;
+    width: 100%;
+}
+
+.logo-lines img {
+    height: 100%;
+    width: 100%;
+}
